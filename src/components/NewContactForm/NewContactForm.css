@@ -1,0 +1,79 @@
+
+.formContainer h1{
+    color:black;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.errors {
+    color: red;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background:#F8F7Fa;
+    border-radius: 5px;
+
+}
+
+input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+label {
+    font-weight: bold;
+    width: 100px;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+form{
+  display: flex;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.saveButton {
+    display: inline-block;
+    text-align: center;
+    background-color: #430404 ;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    height: 45px;
+    width: 100%;
+    border: none;
+}
+
+/* Add padding to container elements */
+.formContainer {
+  display: block;
+  padding: 16px;
+  margin:auto;
+  margin-top: 100px;
+  padding-bottom: 72px;
+  width: 30%;
+
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

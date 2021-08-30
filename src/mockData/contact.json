@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "firstname": "Harry",
+    "lastname": "Potter",
+    "phoneNumber": "5163189902",
+    "email":"harryp@gmail.com",
+    "avatar":"../img/harry.jpeg"
+  },
+  {
+    "id": 2,
+    "firstname": "Ron",
+    "lastname": "Weasley",
+    "phoneNumber": "4173188902",
+    "email":"rronweasley@yahoo.com",
+    "avatar":"../img/Ron.jpeg"
+  },
+  {
+    "id": 3,
+    "firstname": "Hermione",
+    "lastname": "Granger",
+    "phoneNumber": "6133144202",
+    "email":"grangerh@yahoo.com",
+    "avatar":"../img/hermione.jpeg"
+  },
+  {
+    "id": 4,
+    "firstname": "Draco",
+    "lastname": "Malfoy",
+    "phoneNumber": "5533217902",
+    "email":"dracom@hotmail.com",
+    "avatar":"../img/draco.png"
+  },
+  {
+    "id": 5,
+    "firstname": "Neville",
+    "lastname": "Longbottom",
+    "phoneNumber": "3165108902",
+    "email":"nevillelong@yahoo.com",
+    "avatar":"../img/nevile.jpeg"
+  },
+  {
+    "id": 6,
+    "firstname": "Ginny",
+    "lastname": "Weasley",
+    "phoneNumber": "3126008902",
+    "email":"ginnyw@gmail.com",
+    "avatar":"../img/Ginny.jpeg"
+  },
+  {
+    "id": 7,
+    "firstname": "Luna",
+    "lastname": "Lovegood",
+    "phoneNumber": "9324467892",
+    "email":"cuteluna@gmail.com",
+    "avatar":"../img/Luna.jpeg"
+  },
+  {
+    "id": 8,
+    "firstname": "Cedric",
+    "lastname": "Diggory",
+    "phoneNumber": "7185003000",
+    "email":"cedricd@yahoo.com",
+    "avatar":"../img/Cedric.jpeg"
+  },
+  {
+    "id": 9,
+    "firstname": "Cho",
+    "lastname": "Chang",
+    "phoneNumber": "6192338762",
+    "email":"changcho@gmail.com",
+    "avatar":"../img/Cho.jpeg"
+  },
+  {
+    "id": 10,
+    "firstname": "Albus",
+    "lastname": "Dumbledore",
+    "phoneNumber": "6666666666",
+    "email":"presidentalbus@yahoo.com",
+    "avatar":"../img/Albus.jpeg"
+  }
+]
