@@ -7,7 +7,7 @@ function ContactDetails({ contact, handleDelete }) {
 
   return (
     <div className="contact-details">
-      <img alt="contactAvatar" className="avatar" src={contact.avatar}></img>
+      <img alt={`contactAvatar-${contact.id}`} className="avatar" src={contact.avatar}></img>
       <div className="name">
         <span>{contact.firstname} </span>
         <span>{contact.lastname}</span>
