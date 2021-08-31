@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import './EditForm.css';
 import {useParams, useHistory} from "react-router-dom";
 import {useSelector, useDispatch} from "react-redux";
@@ -17,9 +17,7 @@ function EditForm() {
     const [lastname, setLastName] = useState(currentContact?.lastname);
     const [phoneNumber, setPhoneNumber] = useState(currentContact?.phoneNumber);
     const [email, setEmail] = useState(currentContact?.email);
-    const [avatar, setAvatar] = useState(currentContact?.avatar);
-    const [errors, setErrors] = useState([]);
-
+    const [avatar] = useState(currentContact?.avatar);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -33,11 +31,6 @@ function EditForm() {
         <div className="formContainer">
             <h1>Edit Contact Information</h1>
             <form onSubmit={handleSubmit}>
-                <div className="errors">
-                    {errors.map((error) => (
-                        <div key={error}>・{error}</div>
-                    ))}
-                </div>
                 <label>First Name:</label>
                 <input type="text" value={firstname} onChange={(e) => setFirstName(e.target.value)} required/>
                 <label>Last Name: </label>

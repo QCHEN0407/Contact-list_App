@@ -1,8 +1,5 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import './ConfirmDelete.css';
-import { useHistory } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
-import { addContact } from "../../store/contact"
 
 function ConfirmDelete({confirmDelete, cancelDelete, id}) {
 

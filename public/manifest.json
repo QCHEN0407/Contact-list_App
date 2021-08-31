@@ -1,6 +1,6 @@
 {
-  "short_name": "Grocery Store",
-  "name": "Grocery Store Application",
+  "short_name": "Contact List",
+  "name": "Contact List Application",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
