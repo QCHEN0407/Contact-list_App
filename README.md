@@ -1,12 +1,24 @@
-# Hogwarts Contact-list App
+# Welcome to Hogwarts Contact-list App!
 
+## MVP Feature List
 - Display all the contacts in a list
 - Create new contact to the list
 - Edit/Delete contact from the list
 - Show detailed information of contacts
 
-## Phase 0: Familiarize yourself with the code
+## Running the App
+- Run `npm install` then `npm start` to start the development server.
+- Run `npm run test`to run unit tests
 
-Clone the starter repository at [INSERT REPO HERE].
+## Technologies used:
+#### Frontend
+* React.js
+* Redux
+* JavaScript
+* HTML, Vanilla CSS
+* `font-awsome-icons`
 
-Run `npm install` then `npm start` to start the development server.
+## Contact-list Developer
+- [@vivianchen](https://github.com/QCHEN0407) 📹
+
+
