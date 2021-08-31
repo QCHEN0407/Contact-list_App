@@ -5,11 +5,11 @@ function ContactProfile({contact}) {
   return (
     <>
         <div className="card">
-            <img alt="contactAvatar" className="profilePic" src={contact.avatar} alt="Avatar" />
+            <img data-testid="card-avatar" alt="contactAvatar" className="profilePic" src={contact.avatar} />
             <div className="container">
-                <h4><b>{contact.firstname} {contact.lastname}</b></h4>
-                <p>Phone: {contact.phoneNumber}</p>
-                <p>Email: {contact.email}</p>
+                <h4 data-testid="card-name"><b>{contact.firstname} {contact.lastname}</b></h4>
+                <p data-testid="card-phone">Phone: {contact.phoneNumber}</p>
+                <p data-testid="card-email">Email: {contact.email}</p>
             </div>
         </div>
     </>
