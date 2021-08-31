@@ -6,7 +6,7 @@ function ContactDetails({ contact, handleDelete }) {
   const history = useHistory();
 
   return (
-    <li className="contact-details">
+    <div className="contact-details">
       <img alt="contactAvatar" className="avatar" src={contact.avatar}></img>
       <div className="name">
         <span>{contact.firstname} </span>
@@ -33,7 +33,7 @@ function ContactDetails({ contact, handleDelete }) {
           <i className="fas fa-trash-alt"></i>
         </button>
       </span>
-    </li>
+    </div>
   );
 }
 

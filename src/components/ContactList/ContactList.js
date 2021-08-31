@@ -47,13 +47,13 @@ function ContactList() {
   return (
     <>
       {!contactArr.length && <span>No contact available right now.</span>}
-      <ul style={{cursor: 'pointer'}} className="contact-list">
+      <div style={{cursor: 'pointer'}} className="contact-list">
         {contactArr.map((contact) => (
           <div id={contact.id} key={contact.id} onClick={() => {handleShowContact(contact.id)}}>
             <ContactDetails handleDelete={handleDelete} key={contact.id} contact={contact} />
           </div>
         ))}
-      </ul>
+      </div>
       {popup.show && (<ConfirmDelete confirmDelete={confirmDelete} cancelDelete={cancelDelete} id={popup.id} />)}
       {showContact.show && (<ContactProfile contact={showContact.contact} />)}
     </>

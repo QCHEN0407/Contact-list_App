@@ -1,23 +1,9 @@
-/* * {box-sizing: border-box}
-
-body {
-    padding-top: 65px;
-    background-color:  white;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-    margin: auto;
-  } */
-
-.formContainer h1{
+.formContainer h1 {
     color:black;
     text-align: center;
     margin-bottom: 50px;
 }
 
-.errorList{
-    color: red;
-}
-
-/* Full-width input fields */
 input[type=text], input[type=email] {
     width: 100%;
     padding: 15px;
@@ -29,7 +15,7 @@ input[type=text], input[type=email] {
 
 }
 
-input[type=text]:focus{
+input[type=text]:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -39,22 +25,13 @@ label {
     width: 100px;
 }
 
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-form{
+form {
   display: flex;
   align-content: center;
   align-items: flex-start;
   justify-content: center;
   margin: auto;
   flex-direction: column;
-}
-
-button:hover {
-  opacity:1;
 }
 
 .saveButton {
@@ -77,11 +54,4 @@ button:hover {
   padding-bottom: 72px;
   width: 30%;
 
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
 }
