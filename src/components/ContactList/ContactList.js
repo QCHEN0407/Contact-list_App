@@ -54,7 +54,7 @@ function ContactList() {
           </div>
         ))}
       </div>
-      {popup.show && (<ConfirmDelete confirmDelete={confirmDelete} cancelDelete={cancelDelete} id={popup.id} />)}
+      {popup.show && (<ConfirmDelete confirmDelete={confirmDelete} cancelDelete={cancelDelete} id={popup.id} contact={contactObj[popup.id]} />)}
       {showContact.show && (<ContactProfile contact={showContact.contact} />)}
     </>
   );
