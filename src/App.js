@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import ContactList from './components/ContactList';
+import ContactList from './components/ContactList/ContactList';
 import EditForm from './components/EditForm';
 import NewContactForm from './components/NewContactForm';
 import { useDispatch } from 'react-redux';
