@@ -13,11 +13,11 @@ function EditForm() {
     const contactObj = useSelector(state => state.contact);
     const currentContact = contactObj[contactId]
 
-    const [firstname, setFirstName] = useState(currentContact?.firstname);
-    const [lastname, setLastName] = useState(currentContact?.lastname);
-    const [phoneNumber, setPhoneNumber] = useState(currentContact?.phoneNumber);
-    const [email, setEmail] = useState(currentContact?.email);
-    const [avatar] = useState(currentContact?.avatar);
+    const [firstname, setFirstName] = useState(currentContact.firstname);
+    const [lastname, setLastName] = useState(currentContact.lastname);
+    const [phoneNumber, setPhoneNumber] = useState(currentContact.phoneNumber);
+    const [email, setEmail] = useState(currentContact.email);
+    const [avatar] = useState(currentContact.avatar);
 
     const handleSubmit = (e) => {
         e.preventDefault();
