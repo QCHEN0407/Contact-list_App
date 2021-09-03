@@ -4,11 +4,11 @@ import './ContactProfile.css';
 function ContactProfile({contact}) {
   return (
     <>
-        <div className="card">
+        <div className="profile-card">
             <img data-testid="card-avatar" alt="contactAvatar" className="profilePic" src={contact.avatar} />
             <div className="container">
                 <h4 data-testid="card-name"><b>{contact.firstname} {contact.lastname}</b></h4>
-                <p data-testid="card-phone">Phone: {contact.phoneNumber}</p>
+                <p data-testid="card-phone">Phone: +1 {`(${contact.phoneNumber.slice(0,3)}) ${contact.phoneNumber.slice(3,6)}-${contact.phoneNumber.slice(6)}`}</p>
                 <p data-testid="card-email">Email: {contact.email}</p>
             </div>
         </div>

@@ -55,7 +55,10 @@ function ContactList() {
         ))}
       </div>
       {popup.show && (<ConfirmDelete confirmDelete={confirmDelete} cancelDelete={cancelDelete} id={popup.id} contact={contactObj[popup.id]} />)}
-      {showContact.show && (<ContactProfile contact={showContact.contact} />)}
+      <div className="profile-wrapper">
+        {showContact.show && (<ContactProfile contact={showContact.contact} />)}
+      </div>
+
     </>
   );
 }

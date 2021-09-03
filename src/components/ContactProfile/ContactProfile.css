@@ -1,13 +1,12 @@
-.card {
+.profile-card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 300px;
     position: fixed;
-    top: 120px;
-    right: 20%;
-    background-color: indigo;
+    top: 140px;
+    border-radius: 10px;
   }
-.card:hover {
+.profile-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -19,11 +18,20 @@
     width: 300px;
     height: 300px;
     object-fit: cover;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
 }
 
 @media screen and (max-width: 1200px) {
-  .card {
-    position: relative;
-    left: 10%;
+  .profile-card {
+    position: static;
+    margin-bottom: 20px;
   }
+  main{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
 }

@@ -5,6 +5,7 @@ import NewContactForm from './components/NewContactForm';
 import { useDispatch } from 'react-redux';
 import { populateContact } from './store/contact';
 import { Route, Switch, useHistory } from 'react-router-dom';
+import './index.css';
 
 
 function App() {

@@ -7,9 +7,13 @@ input {
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 54px;
   transition: all 0.2s linear;
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 nav{
@@ -20,7 +24,6 @@ nav{
   padding: 0 16px;
   height: 54px;
   background-color: #4d0505;
-  /* box-shadow: 3px -1px 3px 3px lightgray; */
   top: 0px;
   left: 0px;
   position: fixed;
@@ -51,4 +54,10 @@ h1 {
 h2 {
   color: gray;
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  nav >h1{
+    font-size: 18px;
+  }
 }
