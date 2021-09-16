@@ -13,7 +13,7 @@ function ContactDetails({ contact, handleDelete }) {
         <span>{contact.lastname}</span>
       </div>
       <div className="phone">
-        <span>+1 {`(${contact.phoneNumber.slice(0,3)}) ${contact.phoneNumber.slice(3,6)}-${contact.phoneNumber.slice(6)}`}</span>
+        <span><i class="fas fa-phone"></i> +1 {`(${contact.phoneNumber.slice(0,3)}) ${contact.phoneNumber.slice(3,6)}-${contact.phoneNumber.slice(6)}`}</span>
       </div>
       <span>
         <button
