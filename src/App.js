@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import ContactList from './components/ContactList/ContactList';
-import EditForm from './components/EditForm';
-import NewContactForm from './components/NewContactForm';
+import EditForm from './components/EditForm/EditForm';
+import NewContactForm from './components/NewContactForm/NewContactForm';
 import { useDispatch } from 'react-redux';
 import { populateContact } from './store/contact';
 import { Route, Switch, useHistory } from 'react-router-dom';

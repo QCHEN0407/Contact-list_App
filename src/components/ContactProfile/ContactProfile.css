@@ -6,17 +6,16 @@
     top: 140px;
     border-radius: 10px;
     background-color: white;
+    margin-right: 80px;
   }
 .profile-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 
 }
-
 .container {
   padding: 2px 16px;
 
 }
-
 .profilePic {
     width: 300px;
     height: 300px;
@@ -35,6 +34,7 @@
   .profile-card {
     position: static;
     margin-bottom: 20px;
+    margin-right: 0;
   }
   main{
     display: flex;
@@ -44,7 +44,6 @@
   }
   .fa-phone-square:before {
     font-size: 1.7em;
-
   }
   .fa-envelope-square:before{
     font-size: 1.7em;

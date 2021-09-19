@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { getAllContacts } from '../../store/contact';
-import ConfirmDelete from "../ConfirmDelete";
-import ContactProfile from "../ContactProfile";
+import ConfirmDelete from "../ConfirmDelete/ConfirmDelete";
+import ContactProfile from "../ContactProfile/ContactProfile";
 import ContactDetails from './ContactDetails';
 import { deleteContact } from "../../store/contact";
 import './ContactList.css';
