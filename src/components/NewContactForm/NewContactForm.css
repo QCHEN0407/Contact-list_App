@@ -21,7 +21,7 @@ input[type=text]:focus{
 
 label {
     font-weight: bold;
-    width: 100px;
+    width: 100%;
 }
 
 form {

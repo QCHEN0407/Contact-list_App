@@ -26,14 +26,18 @@ function NewContactForm() {
             <div className="formContainer">
                 <h1>Create New Contact</h1>
                 <form onSubmit={handleSubmit}>
-                    <label>First Name:</label>
-                    <input type="text" value={firstname} onChange={(e) => setFirstName(e.target.value)} required/>
-                    <label>Last Name: </label>
-                    <input type="text" value={lastname} onChange={(e) => setLastName(e.target.value)} required/>
-                    <label>Phone:</label>
-                    <input type="text" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} required pattern="^\d{10}$" title="Please enter a 10 digit phone number"/>
-                    <label>Email:</label>
-                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
+                    <label>
+                        First Name:<input type="text" value={firstname} onChange={(e) => setFirstName(e.target.value)} required/>
+                    </label>
+                    <label>Last Name:
+                        <input type="text" value={lastname} onChange={(e) => setLastName(e.target.value)} required/>
+                    </label>
+                    <label>Phone:
+                        <input type="text" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} required pattern="^\d{10}$" title="Please enter a 10 digit phone number"/>
+                    </label>
+                    <label>Email:
+                        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
+                    </label>
                     <button name="saveNewContactButton" className="saveButton"> Save Contact </button>
                 </form>
             </div>
