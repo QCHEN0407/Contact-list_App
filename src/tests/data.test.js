@@ -1,6 +1,6 @@
-const contactData = require('../mockData/contact.json');
+const mockContactData = require('../mockData/contact.json');
 
-test("contactData must be an array", () => {
+test("mockContactData must be an array", () => {
 
     const expected = true
     const result = Array.isArray(contactData);

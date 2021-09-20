@@ -36,7 +36,7 @@ function EditForm() {
                 <label>Last Name: </label>
                 <input type="text" value={lastname} onChange={(e) => setLastName(e.target.value)} required/>
                 <label>Phone:</label>
-                <input type="text" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} required pattern="^\d{10}$"/>
+                <input type="text" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} required pattern="^\d{10}$" title="Please enter a 10 digit phone number"/>
                 <label>Email:</label>
                 <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
                 <button name="saveEditButton" className="saveButton"> Save Change </button>

@@ -20,27 +20,26 @@ function App() {
   return (
     <>
       <nav>
-        <h1 style={{cursor: 'pointer'}} onClick={() => {
+        <h1 onClick={() => {
           history.push("/")
         }}>Hogwarts Contact List</h1>
         <button className="create-contact-button" onClick={() => {
             history.push("/create")
         }}> Create New Contact </button>
       </nav>
-      <Switch>
-        <Route path="/" exact>
-          <main>
-            <ContactList />
-          </main>
-        </Route>
-        <Route path="/edit/:contactId">
-            <EditForm />
-        </Route>
-        <Route path="/create">
-            <NewContactForm />
-        </Route>
-      </Switch>
-
+        <Switch>
+          <Route path="/" exact>
+            <main>
+              <ContactList />
+            </main>
+          </Route>
+          <Route path="/edit/:contactId">
+              <EditForm />
+          </Route>
+          <Route path="/create">
+              <NewContactForm />
+          </Route>
+        </Switch>
     </>
   );
 }

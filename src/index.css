@@ -51,6 +51,7 @@ button:focus {
 
 h1 {
   color: white;
+  cursor: pointer;
 }
 
 h2 {

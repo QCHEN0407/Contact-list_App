@@ -20,11 +20,11 @@
 }
 
 #modal-content {
-    height: 150px;
+    height: 200px;
     width: 450px;
     border-radius: 20px;
     position: absolute;
-    background: linear-gradient(#a4acb6, white);
+    background: white;
     justify-content: center;
     align-items: center;
     padding: 30px;
@@ -57,4 +57,5 @@
 
 #modal-content h2 {
     text-align: center;
+    color: black;
 }

@@ -1,22 +1,22 @@
 import contactData from '../mockData/contact.json';
 
-const POPULATE = 'contact/POPULATE';
-const UPDATE = 'contact/UPDATE';
-const DELETE = 'contact/DELETE';
-const ADD = 'contact/ADD';
+const POPULATE_CONTACTS = 'POPULATE_CONTACTS';
+const UPDATE_CONTACT = 'UPDATE_CONTACT';
+const DELETE_CONTACT = 'DELETE_CONTACT';
+const ADD_CONTACT = 'ADD_CONTACT';
 
 /* ----- ACTIONS ------ */
 
 export const populateContact = () => {
   return {
-    type: POPULATE,
+    type: POPULATE_CONTACTS,
     contacts: contactData
   };
 };
 
 export const updateContact = (id, newContact) => {
   return {
-    type: UPDATE,
+    type: UPDATE_CONTACT ,
     id: id,
     contact: newContact
   }
@@ -24,14 +24,14 @@ export const updateContact = (id, newContact) => {
 
 export const deleteContact = (id) => {
   return {
-    type: DELETE,
+    type: DELETE_CONTACT,
     id:id
   }
 }
 
 export const addContact = (newContact) => {
   return {
-    type: ADD,
+    type: ADD_CONTACT,
     contact: newContact
   }
 }
@@ -44,23 +44,23 @@ export const getAllContacts = (state) => Object.values(state.contact);
 export default function contactReducer(state = {}, action) {
   let newState = {}
   switch (action.type) {
-    case POPULATE:
+    case POPULATE_CONTACTS:
       newState = Object.assign({}, state)
       action.contacts.forEach(contact => {
         newState[contact.id] = contact;
       });
       return newState;
-    case UPDATE:
+    case UPDATE_CONTACT:
       newState = Object.assign({}, state)
       newState[action.id] = action.contact
       return newState;
-    case DELETE:
+    case DELETE_CONTACT:
       newState = Object.assign({}, state)
       delete newState[action.id]
       return newState;
-    case ADD:
+    case ADD_CONTACT:
       newState = Object.assign({}, state)
-      let newId = Math.floor(Math.random() * 1000)
+      let newId = Math.floor(Math.random() * 1000)//this is only here because we don't have a backend or database
       action.contact.id = newId;
       newState[newId] = action.contact;
       return newState;
