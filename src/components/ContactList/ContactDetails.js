@@ -27,7 +27,7 @@ function ContactDetails({ contact, handleDelete }) {
           aria-label="delete"
           className={"delete-button"}
           onClick={() => {
-            handleDelete(contact.id);
+            handleDelete(contact);
           }}
         >
           <i className="fas fa-trash-alt"></i>

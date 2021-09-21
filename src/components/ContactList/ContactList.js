@@ -10,19 +10,18 @@ import './ContactList.css';
 function ContactList() {
   const dispatch = useDispatch();
   const contactArr = useSelector(getAllContacts);
-  const contactObj = useSelector(state => state.contact)
-  const [popup, setPopup] = useState({show: false, id:null})
+  const [popup, setPopup] = useState({show: false, contact:null})
   const [showContact, setShowContact] = useState({show:false, contact:null});
 
-  const handleDelete = (id) => {
+  const handleDelete = (contact) => {
     setPopup({
       show:true,
-      id,
+      contact,
     })
   }
 
-  const confirmDelete = (id) => {
-    dispatch(deleteContact(id));
+  const confirmDelete = (contact) => {
+    dispatch(deleteContact(contact.id));
     setPopup({
       show:false,
       contact:null
@@ -40,8 +39,8 @@ function ContactList() {
     })
   }
 
-  const handleShowContact = (contactId) => {
-    setShowContact({show:true, contact:contactObj[contactId]});
+  const handleShowContact = (contact) => {
+    setShowContact({show:true, contact});
   }
 
   return (
@@ -49,12 +48,12 @@ function ContactList() {
       {!contactArr.length && <span>No contact available right now.</span>}
       <div style={{cursor: 'pointer'}} className="contact-list">
         {contactArr.map((contact) => (
-          <div id={contact.id} key={contact.id} onClick={() => {handleShowContact(contact.id)}}>
-            <ContactDetails handleDelete={handleDelete} key={contact.id} contact={contact} />
+          <div id={contact.id} key={contact.id} onClick={() => {handleShowContact(contact)}}>
+            <ContactDetails handleDelete={handleDelete} contact={contact} />
           </div>
         ))}
       </div>
-      {popup.show && (<ConfirmDelete confirmDelete={confirmDelete} cancelDelete={cancelDelete} id={popup.id} contact={contactObj[popup.id]} />)}
+      {popup.show && (<ConfirmDelete confirmDelete={confirmDelete} cancelDelete={cancelDelete} contact={popup.contact} />)}
       <div className="profile-wrapper">
         {showContact.show && (<ContactProfile contact={showContact.contact} />)}
       </div>
