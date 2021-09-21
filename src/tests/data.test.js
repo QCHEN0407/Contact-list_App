@@ -3,25 +3,25 @@ const mockContactData = require('../mockData/contact.json');
 test("mockContactData must be an array", () => {
 
     const expected = true
-    const result = Array.isArray(contactData);
+    const result = Array.isArray(mockContactData);
 
     expect(result).toEqual(expected)
-    expect(typeof contactData).toEqual("object")
-    expect(typeof contactData).not.toEqual("number")
-    expect(typeof contactData).not.toEqual("string")
+    expect(typeof mockContactData).toEqual("object")
+    expect(typeof mockContactData).not.toEqual("number")
+    expect(typeof mockContactData).not.toEqual("string")
 })
 
-test("contactData must be have a length of ten", () => {
+test("mockContactData must be have a length of ten", () => {
 
     const expected = 10;
-    const result = contactData.length;
+    const result = mockContactData.length;
 
     expect(result).toEqual(expected)
-    expect(contactData).toHaveLength(expected)
+    expect(mockContactData).toHaveLength(expected)
 })
 
-test("contactData must have the correct properties", () => {
-    const firstObj = contactData[0];
+test("mockContactData must have the correct properties", () => {
+    const firstObj = mockContactData[0];
 
     expect(firstObj).toHaveProperty("id")
     expect(firstObj).toHaveProperty("firstname")

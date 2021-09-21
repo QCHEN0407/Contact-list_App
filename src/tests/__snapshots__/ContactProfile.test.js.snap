@@ -2,7 +2,7 @@
 
 exports[`matches snapshot 1`] = `
 <div
-  className="card"
+  className="profile-card"
 >
   <img
     alt="contactAvatar"
@@ -25,13 +25,19 @@ exports[`matches snapshot 1`] = `
     <p
       data-testid="card-phone"
     >
-      Phone: 
-      5163189902
+      <i
+        className="fas fa-phone-square"
+      />
+       +1 
+      (516) 318-9902
     </p>
     <p
       data-testid="card-email"
     >
-      Email: 
+      <i
+        className="fas fa-envelope-square"
+      />
+       
       harryp@gmail.com
     </p>
   </div>

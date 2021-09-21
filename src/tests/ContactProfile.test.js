@@ -31,13 +31,13 @@ it('renders name correctly', ()=> {
 it('renders phoneNumber correctly', ()=> {
   const {getByTestId} = render(<ContactProfile contact={contact}/>)
   const element = getByTestId("card-phone");
-  expect(element).toHaveTextContent("Phone: 5163189902")
+  expect(element).toHaveTextContent("+1 (516) 318-9902")
 })
 
 it('renders email correctly', ()=> {
   const {getByTestId} = render(<ContactProfile contact={contact}/>)
   const element = getByTestId("card-email");
-  expect(element).toHaveTextContent("Email: harryp@gmail.com")
+  expect(element).toHaveTextContent("harryp@gmail.com")
 })
 
 it('renders avatar correctly', ()=>{

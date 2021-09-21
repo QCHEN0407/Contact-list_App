@@ -111,9 +111,9 @@
     }
     .contact-details >span{
         grid-area: 3/2/4/3;
-        display: flex;
-        justify-content: flex-start;
         margin-left: 10px;
+        display: flex;
+        justify-content: flex-end;
     }
     .edit-button, .delete-button {
         width: 20px;
@@ -122,10 +122,6 @@
         color: black;
         margin-right: 2px;
     }
-    .contact-details >span{
-        display: flex;
-        justify-content: flex-end;
-     }
     .fas{
         font-size: 10px;
     }

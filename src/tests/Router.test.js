@@ -1,8 +1,8 @@
 import React from 'react';
 import App from '../App';
-import ContactList from '../components/ContactList';
-import EditForm from '../components/EditForm';
-import NewContactForm from '../components/NewContactForm';
+import ContactList from '../components/ContactList/ContactList';
+import EditForm from '../components/EditForm/EditForm';
+import NewContactForm from '../components/NewContactForm/NewContactForm';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
 import { Provider } from 'react-redux';
@@ -10,9 +10,9 @@ import '@testing-library/jest-dom/extend-expect';
 import configureStore from '../store';
 
 const store = configureStore();
-jest.mock('../components/ContactList');
-jest.mock('../components/NewContactForm');
-jest.mock('../components/EditForm');
+jest.mock('../components/ContactList/ContactList');
+jest.mock('../components/NewContactForm/NewContactForm');
+jest.mock('../components/EditForm/EditForm');
 
 test("Should render ContactList component on home route", ()=> {
 
