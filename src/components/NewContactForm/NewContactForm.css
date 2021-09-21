@@ -53,3 +53,15 @@ form {
   padding-bottom: 72px;
   width: 30%;
 }
+
+@media screen and (max-width: 1000px) {
+  .formContainer {
+    display: block;
+    padding: 16px;
+    margin:auto;
+    margin-top: 50px;
+    padding-bottom: 72px;
+    width: 80%;
+  }
+
+}
